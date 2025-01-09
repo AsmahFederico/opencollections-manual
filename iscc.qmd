@@ -1,10 +1,22 @@
 # ISCC {#sec-musicapi .appendix}
 
+## What is ISCC
+
+The International Standard Content Code (ISCC) is an open-source technology that enables the identification, attribution, and management of digital content across various platforms and industries. It provides a unique, decentralized and content-derived identifier for any type of digital media, including text, images, audio, and video. It is based on the ISO 24138:2024 Standard.
+
+It is similar to DOI, however the ISCC is generated from the media file itself, allowing for decentralized content identification and similarity matching. While other identifiers (like DOI or Handle) identify the work as a product, the ISCC simply refers to the media itself.
+
+Among other things ISCC can be used for authentication (for example AI generated pictures can be tagged as such with it) or for copyright information (public domain status).
+
+The ISCC code is completely free and can be generated on the website: [demo.iscc.io](https://demo.iscc.io/).
+
+## Guide on adding ISCC to a file
+
 1\. Upload a file to [demo.iscc.io](https://demo.iscc.io/).
 
 ![](jpg/bartczky/01_ISCC-F-Bartczky_Victor_20241227.jpg)
 
-2\. Fill out the title and description, but do not download the updated file yet.
+2\. Fill out the title and description, but **do not** **download** the updated file yet.
 
 3\. Go to [archive.org](https://archive.org/) (or the permanent storage, for example, Wikimedia) where you will make the image or work available.
 
@@ -16,7 +28,7 @@
 
 ![](jpg/bartczky/03_archiveorg-F-Bartczky_Victor_20241227.jpg){fig-align="center"}
 
-6\. On demo.iscc.io press Update metadata & generate ISCC
+6\. On demo.iscc.io press 'Update metadata & generate ISCC'
 
 7\. Make sure that the ISCC is added to the archive.org upload (metadata field: ISCC), and that the archive.org preliminary address is added to the ISCC description.
 

@@ -65,8 +65,8 @@ book:
     - questionbank.qmd
     - musicapi.qmd
 
-version: 0.2.33
-doi: 10.5281/zenodo.13912121
+version: 0.2.34
+doi: 10.5281/zenodo.14621805
 
 bibliography: 
     - bib/cm.bib
