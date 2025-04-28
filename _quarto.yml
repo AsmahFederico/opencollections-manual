@@ -45,6 +45,16 @@ book:
                  country: The Netherlands
                  postal-code: "2516 AH"
                  url: https://reprex.nl/
+     - name: "Asmah Federico"
+       orcid: 0009-0004-7206-4174
+       affiliations:
+               - name: Reprex
+                 address: "Saturnusstraat 14"
+                 city: The Hague
+                 state: Zuid-Holland
+                 country: The Netherlands
+                 postal-code: "2516 AH"
+                 url: https://reprex.nl/
   date: today
   repo-url: https://github.com/dataobservatory-eu/opencollections-manual
   repo-actions: [edit]
