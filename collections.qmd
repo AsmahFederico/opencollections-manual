@@ -10,28 +10,28 @@ Our manual aims to remain practical and seeks no definition of collection or cur
 
 Curators of physical collections have been recognised as professionals who search, acquire, preserve, research and communicate the individual items of collections to be preserved for further generation in musea: "…the notions of curation and curator to denote the person in charge of all tasks directly related to objects in a museum collection (i.e. their preservation, research, and communication) become firmly established in the English-speaking world only as late as the nineteenth century, their generalised use coinciding with the rise of museum professionalism." [@dallas_digital_curation_2016]
 
-In the digital era, without the limitations of transport costs, storage space costs, temperature or lightning requirements, we can create much larger collections; on the Internet they can attract a global user base. Digital curation requires a reflection on the physical curatorial policies.
+In the digital era, without the limitations of transport costs, storage space costs, temperature, or lightning requirements, we can create much larger collections; on the Internet, they can attract a global user base. Digital curation requires a reflection on the physical curatorial policies.
 
-> "In a pragmatic approach, actors of digital curation include not just information professionals but also those involved in all aspects of the creation and reuse of a broad range of information objects. The latter comprise not just digital research data, static digital resources, and databases, but also derivations and performances of such objects, and representations of domain knowledge, including indigenous and community based." [@dallas_digital_curation_2016]
+> "In a pragmatic approach, actors of digital curation include not just information professionals but also those involved in all aspects of the creation and reuse of a broad range of information objects. The latter comprises not just digital research data, static digital resources, and databases, but also derivations and performances of such objects, and representations of domain knowledge, including indigenous and community-based." [@dallas_digital_curation_2016]
 
 ## Collection types
 
 ### Playlists, repertoires, libraries
 
-The archetype of libraries contains books organized by title, author and topic, or music libraries by title, author and genre.
+The archetype of libraries contains books organized by title, author, and topic, or music libraries by title, author, and genre.
 
 Library-type collections use the Dublin Core metadata set, organized around titles, authors, and short descriptions.
 
 ::: callout-tip
 #### Libraries, playlist
 
-Your collection will likely depend on the Dublin Core, DataCite or Europena mandatory metadata fields. For example, to place an item of your collection into Europeana you must identify each item with a `title` and/or a `description`; in a library system you will use titles, often with subtitles or alternative (translated) titles.
+Your collection will likely depend on the Dublin Core, DataCite, or European mandatory metadata fields. For example, to place an item of your collection into Europeana, you must identify each item with a `title` and/or a `description`; in a library system, you will use titles, often with subtitles or alternative (translated) titles.
 
 -   [x] You will use the names of author(s), like *Mark Twain*, or *John Lennon* and *Paul McCartney*.
--   [x] You will use titles, like *The Adventures of Huckleberry Finn* and *Hey Jude* and *Symphony No. 2.*. Literary works and classical music works often have translated titles like *2. szimfónia*.
--   [x] You will use publication or public release or copyright registration dates (or at least years.)
+-   [x] You will use titles, like *The Adventures of Huckleberry Finn* and *Hey Jude,* and *Symphony No. 2*. Literary works and classical music works often have translated titles like *2. szimfónia*.
+-   [x] You will use publication or public release, or copyright registration dates (or at least years).
 
-Because there may be several identically named authors or titles (think about the Symphony No. 2.), you will need unique identifiers for your items.
+Because there may be several identically named authors or titles (think about the Symphony No. 2), you will need unique identifiers for your items.
 :::
 
 Libraries suffer from name ambiguities and often name entity disambiguation. For example, many songs are called "Machinist," and many authors are called "James Campbell." Sometimes, names and titles need to be matched, which causes search errors, royalty payment errors, etc. See further details in the subsequent @sec-naming-individual-entities part of this chapter.
@@ -45,34 +45,34 @@ Gallery-type collections use a CIDOC-like information model for metadata and usu
 ::: callout-tip
 #### Webshops, galleries, museums
 
-Your collection will likely depend on a broader conceptual model like CIDOC, and well-established controlled vocabularies like AAT.
+Your collection will likely depend on a broader conceptual model like CIDOC and well-established controlled vocabularies like AAT.
 
--   [x] You will use titles, like *Mona Lisa* and *Ohne Titel*. Titles are often translated (*Without title*) or not useful for identification (like *Ohne Titel*).
+-   [x] You will use titles, like *Mona Lisa* and *Ohne Titel*. Titles are often translated (*Without title*) or are not useful for identification (like *Ohne Titel*).
 
--   [x] Because the title may not be a good identifier, you will use short descriptions, like Tour *T-Shirt Female Medium*, *Tour T-Shirt Male XL*, *Blue kitchen apron from the 19th century*. In such cases, the title may be a shorter version of the description *This wonderful Tour T-Shirt is available in blue, yellow, and green for women*.
+-   [x] Because the title may not be a good identifier, you will use short descriptions, like Tour *T-Shirt Female Medium*, *Tour T-Shirt Male XL*, and *Blue kitchen apron from the 19th century*. In such cases, the title may be a shorter version of the description— *This wonderful Tour T-Shirt is available in blue, yellow, and green for women*.
 
--   [x] Various further information points on provenance may be recorded ("Designed in California", "Found in the Friesland region of the Netherlands") etc.
+-   [x] Various further information points on provenance may be recorded ("Designed in California", "Found in the Friesland region of the Netherlands"), etc.
 
 Good descriptions are essential because your users may look for very different items in your collections. Good descriptions can be easily translated from English to Dutch or Latvian, and machines can read them or translate them without error. You will focus on using keywords, keyword chains, or descriptions that come from a controlled vocabulary, a classification, or a thesaurus.
 
-Unless your enterprise or organisation has its ontology, we will use CIDOC as a basis. CIDOC is a complex, event-based information model and you do not have to learn it. We need to ensure that the most important metadata about your collection is imported or entered into Wikibase so that we can export it, for example, into a CIDOC-compliant RDF.
+Unless your enterprise or organisation has its ontology, we will use CIDOC as a basis. CIDOC is a complex, event-based information model, and you do not have to learn it. We need to ensure that the most important metadata about your collection is imported or entered into Wikibase so that we can export it, for example, into a CIDOC-compliant RDF.
 :::
 
-The challenge with galleries is that they have to describe many things consistently and independently from natural languages. For example, a dress historian may use the colour [blue](http://vocab.getty.edu/page/aat/300129361) to describe a [cooking aprons](http://vocab.getty.edu/page/aat/300422315). How do we make sure that `blue`, `blauw`, `kék`, `ლურჯი`, or `синий`, labels are understood the same way, so that we can compare English, Dutch, Russian or Georgian collections? (See @sec-nerd later in this chapter.)
+The challenge with galleries is that they have to describe many things consistently and independently from natural languages. For example, a dress historian may use the colour [blue](http://vocab.getty.edu/page/aat/300129361) to describe a [cooking apron](http://vocab.getty.edu/page/aat/300422315). How do we make sure that `blue`, `blauw`, `kék`, `ლურჯი`, or `синий` labels are understood the same way, so that we can compare English, Dutch, Russian, or Georgian collections? (See @sec-nerd later in this chapter.)
 
 ### Documents, question banks, archives
 
 Archives and document databases often contain millions of various documents or other records. Compared to libraries and galleries, individual collection items usually have a lower value and a much lower level of documentation. An archive may contain millions of documents, but only a few may be interesting for our age or use case. Titles are often non-existent because the `document #3217454` is not very helpful for the user.
 
-Archives emphasize the provenance of their collections. We may have thousands of emails, which must be those of a late novelist or a former CEO. If they are boxed, the origin of the box, when it was boxed, and other aspects of their recording history are the most important guides for the person who wants to find *that* email sent to the editor about the final changes in a novel, or the *final aproval* of an investment project.
+Archives emphasize the provenance of their collections. We may have thousands of emails, which must be those of a late novelist or a former CEO. If they are boxed, the origin of the box, when it was boxed, and other aspects of their recording history are the most important guides for the person who wants to find *that* email sent to the editor about the final changes in a novel, or the *final approval* of an investment project.
 
-Archives use the RiC conceptual model, ontology, or a metadata system on prior international archival standards.
+Archives use the RiC conceptual model, ontology, or a metadata system based on prior international archival standards.
 
 ### Registers {#sec-collections-registers}
 
 Registers are collections that aim for completeness. They register every limited liability company in a jurisdiction, every copyright-protected musical work in a country, every living person, and every living musician in a city.
 
-Registers can be library-like (for example, for copyright-protected literary or musical works), or more archival, for registering every birth and death certificate to create a population register. Like in the case of archives, data provenance is important. As opposed to archives, registers add new items and delete or make them obsolete; when people move away, companies are liquidated, or the copyright term of musical work expires.
+Registers can be library-like (for example, for copyright-protected literary or musical works) or more archival, for registering every birth and death certificate to create a population register. Like in the case of archives, data provenance is important. As opposed to archives, registers add new items and delete or make them obsolete; when people move away, companies are liquidated, or the copyright term of a musical work expires.
 
 ::: callout-tip
 #### From business records to archives
@@ -83,22 +83,22 @@ Your main challenge is that you have many very similar items in your collections
 -   [x] Provenance is recorded with utmost care: the letters from the private drawer of the CEO, the private journal of the author, and the company's the counts in the year 1832.
 -   [x] Like libraries, our role is to connect people to the collection item, broadening the understanding of its significance. This connection is not limited to an author or editor role but extends to various roles such as project sponsor, judge, correspondence partner, sibling, etc.
 
-The international archival standards were modernised into RiC (Records in Context) for linking on the internet in 2023. We use the RIC ontology and conceptual model to work with archival documents. Our curators do not have to work with RIC directly in all cases, but they must use OpenCollections in a way that records they record the key metadata of RIC. We will set up a Wikibase for you in a way that can be translated to RIC (and earlier archival standards.)
+The international archival standards were modernised into RiC (Records in Context) for linking on the internet in 2023. We use the RIC ontology and conceptual model to work with archival documents. Our curators do not have to work with RIC directly in all cases, but they must use OpenCollections in a way that records they record the key metadata of RIC. We will set up a Wikibase for you in a way that can be translated to RIC (and earlier archival standards).
 :::
 
-Registers can be formed around libraries, galleries, and archives, but they always have a time dimension, showing valid from and valid till date of every item.
+Registers can be formed around libraries, galleries, and archives, but they always have a time dimension, showing the valid from and valid till date of every item.
 
 ## Identifying, Naming, and Describing Collection Items
 
-### Naming people and indvidual things {#sec-naming-individual-entities}
+### Naming people and individual things {#sec-naming-individual-entities}
 
 When interacting with the world of persons, things, and relations, we use human language and name the persons and things. When naming people, for example, we use a first name or a full name. Names can be unambiguous or have a certain level of ambiguity that can be resolved in a context. In the United States alone, more than 38,000 men were named James Smith, and more than 32,000 women were named Maria Garcia in 2013 [@hartman_john_smith_et_al]; identification by full name is an error-prone process.
 
-`Taylor` is a unisex English name, and `Swift` is a family name that is not uncommon in English-speaking countries. The full name `Taylor Swift` name can refer to the American female superstar Taylor (Alison) Swift, the American male photographer Taylor Swift, or the event manager of Grand Hyatt New York, a woman who grew up in Missouri and used to sing in groups. (Newsweek: [What It's Like to Be Named Taylor Swift in 2014](https://www.newsweek.com/two-people-named-taylor-swift-talk-about-being-named-taylor-swift-age-taylor-283861))
+`Taylor` is a unisex English name, and `Swift` is a family name that is not uncommon in English-speaking countries. The full name `Taylor Swift` can refer to the American female superstar Taylor (Alison) Swift, the American male photographer Taylor Swift, or the event manager of Grand Hyatt New York, a woman who grew up in Missouri and used to sing in groups. (Newsweek: [What It's Like to Be Named Taylor Swift in 2014](https://www.newsweek.com/two-people-named-taylor-swift-talk-about-being-named-taylor-swift-age-taylor-283861))
 
-Taylor M. Swift, woman from New York:
+Taylor M. Swift, a woman from New York:
 
-> Taylor Swift, New York: Facebook shut off my profile because they thought I was impersonating her. She must have been 15, so I was 18 or 19. She started to get popular and Facebook contacted me saying, "We are so sorry, but any impersonation of any kind is forbidden." I sing, too, and in college I was in a singing group and they thought I was literally impersonating her because people would write on my wall \[about performances\]. I had to send in three forms of ID. I think it took three-and-a-half weeks to get it back. Now my \[Facebook\] name is Taylor \[middle name\] because I can't have my first and last name on there… On my business cards, I have Taylor M. Swift.
+> Taylor Swift, New York: Facebook shut off my profile because they thought I was impersonating her. She must have been 15, so I was 18 or 19. She started to get popular, and Facebook contacted me saying, "We are so sorry, but any impersonation of any kind is forbidden." I sing, too, and in college I was in a singing group, and they thought I was literally impersonating her because people would write on my wall \[about performances\]. I had to send in three forms of ID. I think it took three-and-a-half weeks to get it back. Now my \[Facebook\] name is Taylor \[middle name\] because I can't have my first and last name on there… On my business cards, I have Taylor M. Swift.
 
 Another Taylor Swift, a man from Seattle:
 
@@ -108,29 +108,29 @@ The management of large collections and their databases requires unambiguous ide
 
 The names are replaced with a unique string in a database or an application that works with databases, like a museum inventory book, a copyright register, or a library catalogue. This string is often a string of numeric digits.
 
--   `Uniqueness`: a given identifier must specify (“point to”) one and only one person in the name space; in a personal record collection, there may not be identically named artist, however, in a global collection like the complete catalogue of Spotify, YouTube or Apple Music, there are many namesakes. With the ability to connect, link, join digital collections, names are less and less likely to be unique.
+-   `Uniqueness`: a given identifier must specify (“point to”) one and only one person in the name space; in a personal record collection, there may not be identically named artist, however, in a global collection like the complete catalogue of Spotify, YouTube or Apple Music, there are many namesakes. With the ability to connect, link, and join digital collections, names are less and less likely to be unique.
 
--   `Persistence`: people's names are not permanent, and do not enable unambiguous specification of entities for an indefinite period. In many cultures, people change names when married (or divorced), particularly women; but there are many other reasons for a change of a person's name. In music and other arts, artist often use pseudonyms from a given time period.
+-   `Persistence`: people's names are not permanent, and do not enable unambiguous specification of entities for an indefinite period. In many cultures, people change names when married (or divorced), particularly women, but there are many other reasons for a change of a person's name. In music and other arts, artists often use pseudonyms from a given time period.
 
 ::: callout-tip
 ## Tips for people's names
 
 -   [x] Try to record all name variants.
--   [x] Be aware of the differences of the Eastern and Western name order.
+-   [x] Be aware of the differences between the Eastern and Western name order.
 -   [x] Thrive to use global, unique, persistent identifiers.
 -   [x] When there is no truly global identifier, create one in OpenCollections.
 :::
 
-The `Eiffel Tower`, `Tour Eiffel`, `Eiffel-torony`, `Eiffeltoren` names refer to the same building in English, French, Hungarian and Dutch. While the building is individual, it has many names. Using a street address or the geocoordinates would be tempting; but street addresses keep changing. The geocoordinates do not show elevation (in case you would need the storey number), and there was *something* in another time, before the Eiffel Tower was built on the location of 48° 51' 29.1348'' North and 2° 17' 40.8984'' East. A popular location identifier, `geonames` identifies this famous building with [6254976](https://www.geonames.org/6254976/tour-eiffel.html); Wikidata uses the [Q243](https://www.wikidata.org/wiki/Q243) identifier.
+The `Eiffel Tower`, `Tour Eiffel`, `Eiffel-torony`, `Eiffeltoren` names refer to the same building in English, French, Hungarian, and Dutch. While the building is individual, it has many names. Using a street address or the geocoordinates would be tempting, but street addresses keep changing. The geocoordinates do not show elevation (in case you would need the storey number), and there was *something* in another time, before the Eiffel Tower was built on the location of 48° 51' 29.1348'' North and 2° 17' 40.8984'' East. A popular location identifier, `geonames` identifies this famous building with [6254976](https://www.geonames.org/6254976/tour-eiffel.html); Wikidata uses the [Q243](https://www.wikidata.org/wiki/Q243) identifier.
 
 The `Symphony No. 2` suffers from the same problem (it is `2. szimfónia` in Hungarian and `Symfonie nr. 2` in Dutch), but also from the fact that it is given to many musical works: it may refer to Opus 36 of Ludwig van Beethoven ([Symphony No. 2 in D Major, Op. 36](https://www.wikidata.org/wiki/Q210451)), or [Symphony No. 2 in C Minor](https://www.wikidata.org/wiki/Q210549) by Gustav Mahler, or [Opus 73, Symphony No. 2 in D Major](https://www.wikidata.org/wiki/Q210469), by Johannes Brahms.
 
-In collections, "information for display should be in a format and with syntax that is easily read and understood by users. This may be accomplished through data in the form of free text or concatenated displays, allowing for the expression of the nuances of language necessary to relay the uncertainty and ambiguity that are common in art information." [@harpring_baca_categorizing_art_2016, p429] Most collection management systems use a `title` and a `description` field to achieve this effect; titles and descriptions are used in library, archive and museum-type memory institutions. Software codes and information systems also need good names, and coming up with good names is often considered as the one of the most difficult task in computer science. [@allamanis_suggesting_method_class_names_2015]
+In collections, "information for display should be in a format and with syntax that is easily read and understood by users. This may be accomplished through data in the form of free text or concatenated displays, allowing for the expression of the nuances of language necessary to relay the uncertainty and ambiguity that are common in art information." [@harpring_baca_categorizing_art_2016, p429] Most collection management systems use a `title` and a `description` field to achieve this effect; titles and descriptions are used in library, archive, and museum-type memory institutions. Software codes and information systems also need good names, and coming up with good names is often considered one of the most difficult tasks in computer science. [@allamanis_suggesting_method_class_names_2015]
 
 ::: callout-tip
 ## Tips for individual names of things
 
--   [x] Choose a preferred name that is easy to read, and may be understood for most (or a plurality) of your users.
+-   [x] Choose a preferred name that is easy to read and may be understood by most (or a plurality) of your users.
 -   [ ] It may not be possible to record all name variants; use the ones that may be relevant for your users.
 -   [x] Thrive to use global, unique, persistent identifiers.
 -   [x] When there is no truly global identifier, create one in OpenCollections.
@@ -146,27 +146,27 @@ Information for display should be in a format and with syntax that is easily rea
 ## Tips for naming things
 
 -   [x] Whenever possible, use an open, public, trusted controlled vocabulary or thesaurus to create generic names ("male shirt")
--   [ ] It is a good practice to use several thesauri, even though for usability a preferred (main) thesaurus may be preferred.
--   [x] Use the same controlled vocabularies to identify categories, subgroups, keywords.
+-   [ ] It is a good practice to use several thesauri, even though for usability, a preferred (main) thesaurus may be preferred.
+-   [x] Use the same controlled vocabularies to identify categories, subgroups, and keywords.
 -   [x] Thrive to use global, unique, persistent identifiers of the definitions of your controlled vocabulary.
 -   [x] When there is no truly global definition, create one in OpenCollections.
 :::
 
 ## Identifiers
 
-"An identifier is an unambiguous label which specifies an entity. In computer science terms, an identifier is a name; the entities named occupy a specific domain of application,the namespace, and identify points in that namespace." [@paskin_toward_1999]
+"An identifier is an unambiguous label that specifies an entity. In computer science terms, an identifier is a name; the entities named occupy a specific domain of application, the namespace, and identify points in that namespace." [@paskin_toward_1999]
 
 -   `Uniqueness`: a given identifier must specify (“point to”) one and only one person or thing in the name space. If we work on the internet, then the identifier must be a globally unique string, because the name space can perpetually grow.
 
--   `Persistence`: is permanence of naming, enabling unambiguous specification of entities for an indefinite period.
+-   `Persistence`: is the permanence of naming, enabling unambiguous specification of entities for an indefinite period.
 
-> A numbering scheme is a formal standard, an industry convention, or an arbitrary internal system such as an incremented production serial number etc., to arrive at a consistent syntax for denoting and distinguishing separate members of a class of entities. \[…\] The important point here is that the resulting number is simply a label string (a "noun"). It does not, of itself, create a string that is actionable in a digital or physical environment (a "verb") without further steps being taken. It may be used (and probably will be used) in databases, or it may be incorporated into another mechanism later. [@paskin_identification_2003, 30-31].
+> A numbering scheme is a formal standard, an industry convention, or an arbitrary internal system, such as an incremented production serial number, etc., to arrive at a consistent syntax for denoting and distinguishing separate members of a class of entities. \[…\] The important point here is that the resulting number is simply a label string (a "noun"). It does not, of itself, create a string that is actionable in a digital or physical environment (a "verb") without further steps being taken. It may be used (and probably will be used) in databases, or it may be incorporated into another mechanism later. [@paskin_identification_2003, 30-31].
 
 Because modern IT systems can contain information about billions and billions of things, it is less and less desirable to only use the 0…9 numeric characters for this purpose, and often, a random string of alphanumeric characters is used. Many so-called hash applications ensure that even if you record billions of entities or transactions, they are given a unique string. Following Norman Paskin, it is a good distinction to consider these identifiers as a simple label string or a "noun". `0000 0004 6613 4394` is simply a computer-language equivalent of Taylor (Alison) Swift; it is the International Standard Name Identifier for the said artist. In the universe of the Spotify music platform, the string [06HL4z0CvFAxyc27GXpf02](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02) identifies the same famous artist.
 
 -   [x] A library catalogue contains information about books. Books are usually identified by title, author name, publisher, and publishing data because often the same library has many James Campbells or similar-titled books, etc. A unique global identifier is the International Standard Book Number.
 
--   [x] A music playlist contains sound recordings. The recordings are often referred to by the name of the performer(s) and the title of the music work that they perform; however, in global systems, we may have dozens of same-name performers and even hundreds of same-title works (just think about Symphony No.2!). Instead, we can identify the performers with the ISNI International Standard Name Identifier and the recordings with the Spotify Track ID or the ISRC International Standard Recording Code.
+-   [x] A music playlist contains sound recordings. The recordings are often referred to by the name of the performer(s) and the title of the music work that they perform; however, in global systems, we may have dozens of the same-name performers and even hundreds of the same-title works (just think about Symphony No.2!). Instead, we can identify the performers with the ISNI International Standard Name Identifier and the recordings with the Spotify Track ID or the ISRC International Standard Recording Code.
 
 -   [x] A dress history database may identify specimens of shirts and aprons; as there may be many similar aprons, they usually do not have a specific name. Instead, they are either identified with a generic name, like `Male apron from the 19th century`, or by an inventory number.
 
@@ -187,13 +187,13 @@ The most common standard numbering schemes of interest in digital rights managem
 
 Paskin calls identifiers that can initiate an action in a digital or physical environment actionable identifiers, similar to verbs.
 
-If in your home database, `artist-0001` refers to Taylor Swift, it is just a "noun", a replacement of Taylor Swift. However, [0000 0004 6613 4394](https://isni.org/isni/0000000078519858) and [06HL4z0CvFAxyc27GXpf02](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02) are actionable. Clicking <https://isni.org/isni/0000000078519858> informs you via your browser or your library system by sending a package of standard metadata that this woman is not Taylor M. Swift from New York or the Taylor Swift, the photographer from Seattle. Similarly, <https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02> allows you to check out and even listen to all the released songs of the most famous Taylor Swift.
+If in your home database, `artist-0001` refers to Taylor Swift, it is just a "noun", a replacement for Taylor Swift. However, [0000 0004 6613 4394](https://isni.org/isni/0000000078519858) and [06HL4z0CvFAxyc27GXpf02](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02) are actionable. Clicking <https://isni.org/isni/0000000078519858> informs you via your browser or your library system by sending a package of standard metadata that this woman is not Taylor M. Swift from New York or Taylor Swift, the photographer from Seattle. Similarly, <https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02> allows you to check out and even listen to all the released songs of the most famous Taylor Swift.
 
 ### Local and global identifiers
 
-`Τέιλορ Σουίφτ`, `ტეილორ სვიფტი` both stand for “Taylor Swift” with different character sets and `Teilora Svifta` is a Latvian version of the same name. We can say that they are suitable in a Greek, Georgian or Latvian database. Similarly, database management systems provide (local) unique identifiers for every CD or music sheet of the author.
+`Τέιλορ Σουίφτ`, `ტეილორ სვიფტი` both stand for “Taylor Swift” with different character sets, and `Teilora Svifta` is a Latvian version of the same name. We can say that they are suitable in a Greek, Georgian, or Latvian database. Similarly, database management systems provide (local) unique identifiers for every CD or music sheet of the author.
 
-If in your home database, `artist-0001` may refer to the same artist. The problem with connecting databases and exchanging information about the the artist known as “Taylor Swift” is to ensure that `artist-0001`, `Teilora Svifta` is exchanged with data about [0000 0004 6613 4394](https://isni.org/isni/0000000078519858), or [06HL4z0CvFAxyc27GXpf02](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02), or `ტეილორ სვიფტი,` and not the photographer Taylor Swift or any other person.
+If in your home database, `artist-0001` may refer to the same artist. The problem with connecting databases and exchanging information about the artist known as “Taylor Swift” is to ensure that `artist-0001`, `Teilora Svifta`, is exchanged with data about [0000 0004 6613 4394](https://isni.org/isni/0000000078519858), or [06HL4z0CvFAxyc27GXpf02](https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02), or `ტეილორ სვიფტი,` and not the photographer Taylor Swift or any other person.
 
 `Taylor Swift` is a name, not an identifier. In most contexts, it correctly identifies Taylor M. Swift, Taylor Swift, and Taylor Alison Swift, but there are mistakes.
 
@@ -234,16 +234,16 @@ person:Taylor_Swift relation:author works:Gold_Rush .
 
 The standard *Japanese breakfast* consists of steamed white rice, a bowl of miso soup, and Japanese-style pickles (like takuan or umeboshi). In the context of music, `Japanese Breakfast` is the stage name of the Korean-American artist Michelle Zauner.
 
-| Subject                                                       | Predicate             | Object                                                             |
-|-------------------|------------------------|-----------------------------|
-| Japanese Breakfast                                            | is a                  | music group                                                        |
-| Japanese Breakfast                                            | performs the works of | Michelle Zauner                                                    |
-| Michelle Zauner                                               | wrote                 | `Machinist`                                                        |
-| [Q44555381](https://www.wikidata.org/wiki/Q44555381)          | identifies            | Michelle Zauner                                                    |
-| [0000 0004 6613 4394](https://isni.org/isni/0000000466134394) | identifies            | Michelle Zauner                                                    |
-| `spotify:13FGWUlqQpGugvEcnEUqou`                              | identifies            | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) |
+| Subject | Predicate | Object |
+|----|----|----|
+| Japanese Breakfast | is a | music group |
+| Japanese Breakfast | performs the works of | Michelle Zauner |
+| Michelle Zauner | wrote | `Machinist` |
+| [Q44555381](https://www.wikidata.org/wiki/Q44555381) | identifies | Michelle Zauner |
+| [0000 0004 6613 4394](https://isni.org/isni/0000000466134394) | identifies | Michelle Zauner |
+| `spotify:13FGWUlqQpGugvEcnEUqou` | identifies | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) |
 
-: Semantic Triples
+### Semantic Triples
 
 The simple' subject-predicate-object\` semantic statements show how we can use "statements about potentially informative objects," i.e., these playlists contain information about the authorship, performers, or identity of various music works and their recorded and sheet notation manifestations.
 
@@ -279,14 +279,14 @@ Named entity recognition and disambiguation (NERD) is the task of identifying an
 
 NERD requires knowledge to connect the text `Machinist` correctly with either Michelle Zauner a.k.a. `Japanese Breakfast` or Lloyd Cole.
 
-| Subject                                                                                | Predicate       | Object                                                                                 |
-|-------------------|------------------------|-----------------------------|
-| [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou)                     | is written by   | Michelle Zauner                                                                        |
-| Japanese Breakfast                                                                     | recorded        | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou)                     |
-| Lloyd Cole                                                                             | recorded        | [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) |
-| [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) | was released in | 2001                                                                                   |
-| `spotify:3OQ3DP6IzwE5KRzSp9pUJB`                                                       | identifies      | [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) |
-| `spotify:13FGWUlqQpGugvEcnEUqou`                                                       | identifies      | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou)                     |
+| Subject | Predicate | Object |
+|----|----|----|
+| [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) | is written by | Michelle Zauner |
+| Japanese Breakfast | recorded | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) |
+| Lloyd Cole | recorded | [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) |
+| [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) | was released in | 2001 |
+| `spotify:3OQ3DP6IzwE5KRzSp9pUJB` | identifies | [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) |
+| `spotify:13FGWUlqQpGugvEcnEUqou` | identifies | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) |
 
 : Identifiers help to connect metadata to informative entities.
 
