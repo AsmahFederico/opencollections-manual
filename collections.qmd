@@ -125,7 +125,9 @@ The `Eiffel Tower`, `Tour Eiffel`, `Eiffel-torony`, `Eiffeltoren` names refer to
 
 The `Symphony No. 2` suffers from the same problem (it is `2. szimfónia` in Hungarian and `Symfonie nr. 2` in Dutch), but also from the fact that it is given to many musical works: it may refer to Opus 36 of Ludwig van Beethoven ([Symphony No. 2 in D Major, Op. 36](https://www.wikidata.org/wiki/Q210451)), or [Symphony No. 2 in C Minor](https://www.wikidata.org/wiki/Q210549) by Gustav Mahler, or [Opus 73, Symphony No. 2 in D Major](https://www.wikidata.org/wiki/Q210469), by Johannes Brahms.
 
-In collections, "information for display should be in a format and with syntax that is easily read and understood by users. This may be accomplished through data in the form of free text or concatenated displays, allowing for the expression of the nuances of language necessary to relay the uncertainty and ambiguity that are common in art information." [@harpring_baca_categorizing_art_2016, p429] Most collection management systems use a `title` and a `description` field to achieve this effect; titles and descriptions are used in library, archive, and museum-type memory institutions. Software codes and information systems also need good names, and coming up with good names is often considered one of the most difficult tasks in computer science. [@allamanis_suggesting_method_class_names_2015]
+In collections, "information for display should be in a format and with syntax that is easily read and understood by users. This may be accomplished through data in the form of free text or concatenated displays, allowing for the expression of the nuances of language necessary to relay the uncertainty and ambiguity that are common in art information." [@harpring_baca_categorizing_art_2016, p429]
+
+Most collection management systems use a `title` and a `description` field to achieve this effect; titles and descriptions are used in library, archive, and museum-type memory institutions. Software codes and information systems also need good names, and coming up with good names is often considered one of the most difficult tasks in computer science. [@allamanis_suggesting_method_class_names_2015]
 
 ::: callout-tip
 ## Tips for individual names of things
@@ -138,7 +140,7 @@ In collections, "information for display should be in a format and with syntax t
 
 ### Naming categories, groups of individual entities, and non-individual items
 
-> When discussing art vocabulary for categorizing works of art, we are really talking about the controlled terminology used to *index* art works. For our purposes, *indexing* refers to a conscious activity performed by knowledgeable cataloguers who consider the retrieval implications of the indexing terms that they apply to information objects; we are not referring to an automated process that simply parses every word in a text into indexes, as search engines like Google do on the open Web. Controlled vocabulary for art refers to standardised words and phrases used to refer to ideas, physical characteristics, people, places, events, subject matter, and many other concepts related to art, architecture, and other cultural heritage. The most important functions of a controlled vocabulary are to gather together variant terms and synonyms referring to concepts, and to link concepts in a logical order or into categories. Are a *rose window* and a *Catherine wheel* the same thing? How is *pot-metal glass* related to the more general term *stained glass*? The links and relationships in a controlled vocabulary ensure that these relationships are defined and maintained, for both cataloguing and retrieval.[@harpring_baca_categorizing_art_2016, p426]
+> When discussing art vocabulary for categorizing works of art, we are really talking about the controlled terminology used to *index* art works. For our purposes, *indexing* refers to a conscious activity performed by knowledgeable cataloguers who consider the retrieval implications of the indexing terms that they apply to information objects; we are not referring to an automated process that simply parses every word in a text into indexes, as search engines like Google do on the open Web. Controlled vocabulary for art refers to standardised words and phrases used to refer to ideas, physical characteristics, people, places, events, subject matter, and many other concepts related to art, architecture, and other cultural heritage. The most important functions of a controlled vocabulary are to gather together variant terms and synonyms referring to concepts, and to link concepts in a logical order or into categories. Are a *rose window* and a *Catherine wheel* the same thing? How is *pot-metal glass* related to the more general term *stained glass*? The links and relationships in a controlled vocabulary ensure that these relationships are defined and maintained, for both cataloguing and retrieval. [@harpring_baca_categorizing_art_2016, p426]
 
 Information for display should be in a format and with syntax that is easily read and understood by users. This may be accomplished through data in the form of free text or concatenated displays, allowing for the expression of the nuances of language necessary to relay the uncertainty and ambiguity that are common in art information. In addition, certain key elements of information must be formatted to allow for retrieval, using controlled vocabularies where appropriate.
 
@@ -171,7 +173,7 @@ Because modern IT systems can contain information about billions and billions of
 -   [x] A dress history database may identify specimens of shirts and aprons; as there may be many similar aprons, they usually do not have a specific name. Instead, they are either identified with a generic name, like `Male apron from the 19th century`, or by an inventory number.
 
 ::: callout-note
-The most common standard numbering schemes of interest in digital rights management and digital asset management include
+The most common standard numbering schemes of interest in digital rights management and digital asset management include:
 
 -   ISBN: International Standard Book Numbering (ISBN)
 -   ISSN: International Standard Serial Number (ISSN)
@@ -235,7 +237,7 @@ person:Taylor_Swift relation:author works:Gold_Rush .
 The standard *Japanese breakfast* consists of steamed white rice, a bowl of miso soup, and Japanese-style pickles (like takuan or umeboshi). In the context of music, `Japanese Breakfast` is the stage name of the Korean-American artist Michelle Zauner.
 
 | Subject | Predicate | Object |
-|----|----|----|
+|-------------------|------------------------|-----------------------------|
 | Japanese Breakfast | is a | music group |
 | Japanese Breakfast | performs the works of | Michelle Zauner |
 | Michelle Zauner | wrote | `Machinist` |
@@ -280,7 +282,7 @@ Named entity recognition and disambiguation (NERD) is the task of identifying an
 NERD requires knowledge to connect the text `Machinist` correctly with either Michelle Zauner a.k.a. `Japanese Breakfast` or Lloyd Cole.
 
 | Subject | Predicate | Object |
-|----|----|----|
+|-------------------|------------------------|-----------------------------|
 | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) | is written by | Michelle Zauner |
 | Japanese Breakfast | recorded | [Machinist](https://open.spotify.com/track/13FGWUlqQpGugvEcnEUqou) |
 | Lloyd Cole | recorded | [Machinist](https://open.spotify.com/track/3OQ3DP6IzwE5KRzSp9pUJB?si=b15f7e789f6848fc) |
